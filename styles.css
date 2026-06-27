@@ -102,7 +102,7 @@ h2{
     text-align: center;
 }
 html{
-    base-color: var(--base-color);
+    background-color: var(--base-color);
     color: var(--text);
     transition: var(--base-color) 0.3s, color 0.3s;
 }
