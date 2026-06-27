@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweat2Swag Fan Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <a href="#" class="logo-link"><img src="images/Sweat2Swag_small.png" alt="Sweat2Swag small logo and link to homepage"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html" alt="sweat2swag fan site homepage">Home</a></li>
+                <li><a href="#" alt="sweat2swag real site">Sweat2Swag</a></li>
+            </ul>
+        </nav>
+    </header>       
+    <section id="product-display">
+        <h1>Welcome to the Sweat2Swag Fan Page!</h1>
+            <p>On this site, we are talking about all things Sweat2Swag! Please check out our merch and play our little guessing game. You can even fill out a contact form to reach out to us! And remember, <strong>there's more swag in every rep!</strong></p>
+            <section id="product1" class="currentItem">
+                <h2>Sweat2Swag Merch</h2>
+                <h3>Sweat2Swag Gray Hoodie</h3>
+                <img src="images/gray hoodie.png" alt="gray sweat2swag hoodie">
+                <p>These new Sweat2Swag hoodies are the first in our roll ut of new merch! These are made of 100% cotton, are breathable and very comfy! For a limited time only, we are offering it in blue aas well as black! Get em' before they're gone!</p>
+            </section>
+            <section id="product2" class="hiddenItem">
+                <h3>Sweat2Swag Black Hoodie</h3>
+                <img src="images/black hoodie.png" alt="black sweat2swag hoodie">
+                <p>This is our exclusive black hoodie! It's also made of 100% cotton and is breathable and comfy! This hoodie will only be available for a limited time!</p>    
+            </section>
+            <section id="product3" class="hiddenItem">
+                <h3>Sweat2Swag Blue Hoodie</h3>
+                <img src="images/blue hoodie.png" alt="blue sweat2swag hoodie">
+                <p>This is our exclusive blue hoodie! It's also made of 100% cotton and is breathable and comfy! This hoodie is even more exclusive than the black hoodie! Only 50 of these were printed! Get yours before they're gone!</p>     
+            </section>
+    </section>
+    <section id="gamePlay">
+        <h2>How Many Reps?!</h2>   
+            <form>
+                <label>Enter a number between 1 and 10!</label>
+                <span>Please enter a number from 1 to 10!</span>
+                <input type="number" name="numberGuess" id="numberGuess">
+                <input type="submit" name="guessGame" id="guessGame" value="Play the game!">
+            </form>
+                <section id="gameDisplay">
+                    <h3>Take Your Best Guess!</h3>
+                    <p>How many reps do you think is the recommended amount to do for each set in order to build muscle? Take a good guess! <em>HINT: It's between 1 and 10!</em></p>
+                    <p id="gameOutput1">Sorry! Guess again!</p>
+                    <p id="gameOutput2">You're Right! Congratulations!</p>
+                </section>
+    </section>
+    <section id="contactForm">
+        <h2>Contact Us!</h2>
+        <p>Sweat2Swag wants to hear from you! Leave us your information and your favorite thing that you like about Sweat2Swag. We appreciate the love and can't wait to catch up with you on your journey!</p>
+            <form>
+                <label for="firstName">First Name<span class="required">*</span></label>
+                <span class="message">Please enter your first name!</span>
+                <input name="firstName" id="firstName" type="type">
+                <label for="lastName">Last Name<span class="required">*</span></label>
+                <span class="message">Please enter your last name!</span>
+                <input name="lastName" id="lastName" type="type">
+                <label for="phoneNum">Phone Number<span class="required">*</span></label>
+                <span class="message">Please enter your phone number!</span>
+                <input name="phoneNum" id="phoneNum" type="text">
+                <label for="emailAdd">Email Address<span class="required">*</span></label>
+                <span class="message">Please enter your email address!</span>
+                <input name="emailAdd" id="emailAdd" type="type">
+                <label for="message">Your Message to Us!<span class="required">*</span></label>
+                <span class="message">What do you have to say? We're listening!</span>
+                <textarea id="message"></textarea>
+            </form>
+            <fieldset>
+                <legend>How do you prefer to be reached? Email or Phone?<span class="required">*</span></legend>
+                <label for="emailAdd" class="radio"><span class="radio_input"><input type="radio" name="choice" id="email" required checked><span class="radio-control"></span class="radio-label">Email</span></label>
+                <label for="phoneNum" class="radio"><span class="radio_input"><input type="radio" name="choice" id="phone" required><span class="radio-control"></span class="radio-label">Phone</span></label>
+            </fieldset>
+    </section>
+    <a href="index.html" class="top">Back to Top</a> 
+    <footer>
+        <p>&copy; 2026 Sweat2Swag</p>
+    </footer>
+</body>
+</html>
