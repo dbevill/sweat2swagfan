@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode" />
+    <script src="script.js" defer></script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -21,7 +22,7 @@
             </ul>
         </nav>
     </header>
-    <button id="toggle"></button>       
+    <button id="switch-theme"><span class="material-symbols-outlined">dark_mode</span></button>       
     <section id="product-display">
         <h1>Welcome to the Sweat2Swag Fan Page!</h1>
             <p>On this site, we are talking about all things Sweat2Swag! Please check out our merch and play our little guessing game. You can even fill out a contact form to reach out to us! And remember, <strong>there's more swag in every rep!</strong></p>
@@ -40,6 +41,11 @@
                 <h3>Sweat2Swag Blue Hoodie</h3>
                 <img src="images/blue hoodie.png" alt="blue sweat2swag hoodie">
                 <p>This is our exclusive blue hoodie! It's also made of 100% cotton and is breathable and comfy! This hoodie is even more exclusive than the black hoodie! Only 50 of these were printed! Get yours before they're gone!</p>     
+            </section>
+            <section id="productButtons">
+                <button class="product-button" product-data="product1"></button>
+                <button class="product-button" product-data="product2"></button>
+                <button class="product-button" product-data="product3"></button>
             </section>
     </section>
     <section id="gamePlay">

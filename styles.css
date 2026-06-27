@@ -62,19 +62,19 @@ html{
     font-size: 1.25em;
     /* Light Mode*/
     --text:#0D0D0D;
-    --swaggreen: #4baf51;
+    --button-color: #4baf51;
     --sweatblue: #205d7c;
-    --background: #c2ddf0;
+    --base-color: #c2ddf0;
     --white: #ffffff;
     --lightgray: #d7d9d7;
 }
 .darkmode{
     --text:#ffffff;
     --swaggreen: #4baf51;
-    --background: #205d7c;
+    --base-color: #205d7c;
     --ltblue: #c2ddf0;
-    --accents: #0D0D0D;
-    --lightgray: #d7d9d7;
+    --button-color: #0D0D0D;
+    --lightgray: #7b7d7b;
 }
 
 /* ----- SKIP LINK STYLES ----- */
@@ -102,8 +102,9 @@ h2{
     text-align: center;
 }
 html{
-    background-color: var(--background);
+    base-color: var(--base-color);
     color: var(--text);
+    transition: var(--base-color) 0.3s, color 0.3s;
 }
 header img{
     max-width: 100%;
